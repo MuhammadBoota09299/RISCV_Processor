@@ -26,7 +26,7 @@ stall=1'b0;
             br_type=PC;
         end 
         I_TYPE , LOAD:begin
-            alu_op=ADD;
+            alu_op= (opcode == LOAD) ? ADD : {funct3,1'b0};
             reg_wr=1'b1;
             immediate = { {20{instruction[31]}}, instruction[31:20] };
             sel_B=1'b1;

@@ -10,6 +10,6 @@ module instruction_memory (
     
     initial begin
     $readmemh("../../assembly/c_commands/build/main.txt",inst_memory);
-    //$readmemh("/home/aziz/Documents/Computer_Architecture_Lab/assembly/riscv_commands/build//gcd.txt",inst_memory);
+    //$readmemh("../../assembly/riscv_commands/build//gcd.txt",inst_memory);
     end
 endmodule

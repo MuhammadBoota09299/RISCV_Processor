@@ -13,15 +13,15 @@ int uart_receive(void);
 int main(void){
     int i=0;
     uart_init();
- //   uart_transmit(54);
- //   i=uart_receive();
+    uart_transmit(54);
+    i=uart_receive();
 }
 
 void uart_init(void){
     UART_CTRL_REG &= 0xFE; //disable the uart
     UART_BAUD_REG = 103;   //baud rate
     UART_CTRL_REG |= 0x30; // enable tx and rx 
-    UART_CTRL_REG &= 0xF9; //single stop bit, no parity
+    UART_CTRL_REG |= 0x8; //single stop bit,even parity
     UART_CTRL_REG |= 0x1; // enable uart
 }
 
