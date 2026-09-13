@@ -1,0 +1,3 @@
+[submodule "UART"]
+	path = UART
+	url = git@github.com:MuhammadBoota09299/UART.git
