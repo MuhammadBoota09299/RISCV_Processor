@@ -26,8 +26,15 @@ parity_calculate parity_calculator(
 );
 assign parity_error =(receive_parity!=rx_parity_add);
 
-rx_fifo r_fifo (
-    .*
+fifo RX_FIFO (
+    .clock(clock),
+    .reset(reset),
+    .fifo_rd_en(rx_fifo_rd_en),
+    .fifo_wr_en(rx_fifo_wr_en),
+    .fifo_data(rx_fifo_data),
+    .fifo_empty(rx_fifo_empty),
+    .fifo_full(rx_fifo_full),
+    .fifo_data_out(rx_data)
 );
 
 rx_shift_reg r_shift_reg(
@@ -38,8 +45,15 @@ tx_shift_reg t_shift(
     .*
 );
 
-tx_fifo t_fifo(
-    .*
+fifo TX_FIFO(
+    .clock(clock),
+    .reset(reset),
+    .fifo_rd_en(tx_fifo_rd_en),
+    .fifo_wr_en(tx_fifo_wr_en),
+    .fifo_data(tx_fifo_data),
+    .fifo_empty(tx_fifo_empty),
+    .fifo_full(tx_fifo_full),
+    .fifo_data_out(tx_data)
 );
 
 uart_controller uart_contr(

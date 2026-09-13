@@ -37,12 +37,16 @@ package packages;
     } Br_type;
 
     typedef enum logic [2:0] {
-        LB_SB = 3'b000,
-        LH_SH = 3'b001,
-        LW_SW = 3'b010,
-        LBU   = 3'b100,
-        LHU   = 3'b101
+        BYTE               = 3'b000,
+        HALF_WORD          = 3'b001,
+        WORD               = 3'b010,
+        UNSIGNED_BYTE      = 3'b100,
+        UNSIGNED_HALF_WORD = 3'b101
     } load_store;
+
+
+                                 /// UART Definitions ///
+
 
     // Base address (configurable)
     parameter UART_BASE_ADDRESS = 28'h1600000;
@@ -54,4 +58,14 @@ package packages;
         BAUD_REG   = 4'hC
     } uart_reg_address_t;
 
+    typedef struct packed {
+        logic rx_fifo_rd_en;   // Bit 7: fifo rd_en
+        logic tx_fifo_wr_en;   // Bit 6: fifo wr_en
+        logic rx_fifo_full;    // Bit 5: RX FIFO full
+        logic tx_fifo_full;    // Bit 4: TX FIFO full
+        logic rx_fifo_empty;   // Bit 3: RX FIFO empty
+        logic parity_error;    // Bit 2: Parity error
+        logic stop_bit_error;  // Bit 1: Stop bit error
+        logic busy;           // Bit 0: UART busy
+    } status_reg_t;
 endpackage

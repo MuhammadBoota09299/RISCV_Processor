@@ -17,6 +17,7 @@ module uart_registerfile (
     
     output logic [15:0]baud_rate  // from uart baud register
 );
+
 // uart registers
 logic [7:0] uart_data_reg,uart_ctrl_reg, uart_status_reg;
 logic [15:0] uart_baud_rate_reg;
@@ -51,14 +52,17 @@ always_ff @(negedge clock ) begin
             DATA_REG:begin
                 uart_data_reg<=wdata_mem[7:0];
                 tx_fifo_wr_en<=1'b1;
+                $display("UART: Writing data 0x%0h to TX FIFO", wdata_mem[7:0]);
             end
             CTRL_REG:begin
                 if (!busy) uart_ctrl_reg <=wdata_mem[7:0];
                 tx_fifo_wr_en<=1'b0;
+                $display("UART: Writing control data 0x%0h", wdata_mem[7:0]);
             end
             BAUD_REG:begin
                 if (!(busy || uart_en)) uart_baud_rate_reg <=wdata_mem[15:0];
                 tx_fifo_wr_en<=1'b0;
+                $display("UART: Writing baud rate data 0x%0h", wdata_mem[15:0]);
             end
             default: tx_fifo_wr_en<=1'b0;
         endcase
@@ -86,18 +90,22 @@ always_comb begin
     STATUS_REG :begin
         uart_data={28'b0,uart_status_reg};
         rx_fifo_rd_en=1'b0;
+        $display("UART: Reading status register 0x%0h", uart_status_reg);
     end
     DATA_REG   :begin
         uart_data={28'b0,rx_data};
         if (uart_sel) rx_fifo_rd_en=1'b1;
+        $display("UART: Reading data register 0x%0h", rx_data);
     end
     CTRL_REG   :begin
         uart_data={28'b0,uart_ctrl_reg};
         rx_fifo_rd_en=1'b0;
+        $display("UART: Reading control register 0x%0h", uart_ctrl_reg);
     end
     BAUD_REG   :begin
         uart_data={28'b0,uart_baud_rate_reg};
         rx_fifo_rd_en=1'b0;
+        $display("UART: Reading baud rate register 0x%0h", uart_baud_rate_reg);
     end
         default: rx_fifo_rd_en=1'b0;
     endcase

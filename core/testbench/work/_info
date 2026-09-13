@@ -1,68 +1,76 @@
 m255
 K4
 z2
+!s99 nomlopt
+!s11f vlog 2021.2_1 2021.05, May 15 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/aziz/Documents/Computer_Architecture_Lab/core/testbench
+Z0 d/home/abdul/Videos/Computer_Architecture_Lab/core/testbench
 T_opt
-!s110 1744642210
-V:__WC?KlkX@@RcHdVCL]B0
+!s110 1789288023
+VI7P^KP<B`lcd7H>SLHiD?2
 04 7 4 work core_tb fast 0
-=1-000ae431a4f1-67fd20a1-eb9a3-188a7d
-o-quiet -auto_acc_if_foreign -work work
+=1-e4a7a0f02a3a-6aa65e56-82160-8248
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
-OL;O;10.7c;67
+OL;O;2021.2_1;73
+R0
 valu
-Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-Z3 DXx4 work 8 packages 0 22 OMgbXZnJ>BfmFKAc;EcMT2
-DXx4 work 11 alu_sv_unit 0 22 3kM0ILQYb_hbf7de8l3fG3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 DXx4 work 8 packages 0 22 9h^igl^7CEQEF_KB0bECz2
+DXx4 work 11 alu_sv_unit 0 22 G7Q^S>;OUhdm1zTDik=zL1
+Z4 !s110 1789291882
+Z5 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 `mXW?QlHZl6AckP<Zkd?f2
-Ih`Yz`61JCmSThZfdFX^ZA3
+!s100 UGH09XQdaAkADa^joBz[;1
+IC[QW>F>QnD?D:AiThV7GP2
 !s105 alu_sv_unit
 S1
 R0
-Z5 w1742649647
-Z6 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/alu.sv
-Z7 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/alu.sv
-L0 2
-Z8 OL;L;10.7c;67
+Z6 w1781058535
+Z7 8../rtl/alu.sv
+Z8 F../rtl/alu.sv
+!i122 2
+L0 2 22
+Z9 OL;L;2021.2_1;73
 31
-Z9 !s108 1744642206.000000
-Z10 !s107 /home/aziz/Documents/Computer_Architecture_Lab/core/testbench/core_tb.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/core.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_registerfile.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_controller.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_shift_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_fifo.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_shift_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_fifo.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/parity_calculate.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/buad_rate_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/bit_count_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/lsu.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/registerfile.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pipline_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc_add.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux3_1.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux2_1.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/instruction_memory.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/decoder.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/data_memory.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/branch.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/alu.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/defines/packages.sv|
-Z11 !s90 -sv|+incdir+./core/rtl/defines|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/defines/packages.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/alu.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/branch.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/data_memory.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/decoder.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/instruction_memory.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux2_1.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux3_1.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc_add.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pipline_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/registerfile.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/lsu.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/bit_count_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/buad_rate_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/parity_calculate.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_fifo.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_shift_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_fifo.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_shift_reg.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_controller.sv|/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_registerfile.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/core.sv|/home/aziz/Documents/Computer_Architecture_Lab/core/testbench/core_tb.sv|
+Z10 !s108 1789291882.000000
+!s107 core_tb.sv|../../uart/rtl/uart_registerfile.sv|../../uart/rtl/uart_controller.sv|../../uart/rtl/uart.sv|../../uart/rtl/tx_shift_reg.sv|../../uart/rtl/rx_shift_reg.sv|../../uart/rtl/parity_calculate.sv|../../uart/rtl/fifo.sv|../../uart/rtl/buad_rate_reg.sv|../../uart/rtl/bit_count_reg.sv|../rtl/registerfile.sv|../rtl/pipline_reg.sv|../rtl/pc_add.sv|../rtl/pc.sv|../rtl/mux3_1.sv|../rtl/mux2_1.sv|../rtl/lsu.sv|../rtl/instruction_memory.sv|../rtl/decoder.sv|../rtl/data_memory.sv|../rtl/core.sv|../rtl/branch.sv|../rtl/alu.sv|../rtl/defines/packages.sv|
+Z11 !s90 -sv|+incdir+../rtl/defines|../rtl/defines/packages.sv|../rtl/alu.sv|../rtl/branch.sv|../rtl/core.sv|../rtl/data_memory.sv|../rtl/decoder.sv|../rtl/instruction_memory.sv|../rtl/lsu.sv|../rtl/mux2_1.sv|../rtl/mux3_1.sv|../rtl/pc.sv|../rtl/pc_add.sv|../rtl/pipline_reg.sv|../rtl/registerfile.sv|../../uart/rtl/bit_count_reg.sv|../../uart/rtl/buad_rate_reg.sv|../../uart/rtl/fifo.sv|../../uart/rtl/parity_calculate.sv|../../uart/rtl/rx_shift_reg.sv|../../uart/rtl/tx_shift_reg.sv|../../uart/rtl/uart.sv|../../uart/rtl/uart_controller.sv|../../uart/rtl/uart_registerfile.sv|core_tb.sv|
 !i113 0
 Z12 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z13 !s92 -sv +incdir+./core/rtl/defines -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -sv +incdir+../rtl/defines -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 Xalu_sv_unit
 R2
 R3
-V3kM0ILQYb_hbf7de8l3fG3
+R4
+VG7Q^S>;OUhdm1zTDik=zL1
 r1
 !s85 0
 !i10b 1
-!s100 0md<?U7_QMgSgXg`GJf>01
-I3kM0ILQYb_hbf7de8l3fG3
+!s100 4zWAiAU<bl7@dRjBSf?270
+IG7Q^S>;OUhdm1zTDik=zL1
 !i103 1
 S1
 R0
-R5
 R6
 R7
-L0 1
 R8
-31
+!i122 2
+Z14 L0 1 0
 R9
+31
 R10
+Z15 !s107 core_tb.sv|../../uart/rtl/uart_registerfile.sv|../../uart/rtl/uart_controller.sv|../../uart/rtl/uart.sv|../../uart/rtl/tx_shift_reg.sv|../../uart/rtl/rx_shift_reg.sv|../../uart/rtl/parity_calculate.sv|../../uart/rtl/fifo.sv|../../uart/rtl/buad_rate_reg.sv|../../uart/rtl/bit_count_reg.sv|../rtl/registerfile.sv|../rtl/pipline_reg.sv|../rtl/pc_add.sv|../rtl/pc.sv|../rtl/mux3_1.sv|../rtl/mux2_1.sv|../rtl/lsu.sv|../rtl/instruction_memory.sv|../rtl/decoder.sv|../rtl/data_memory.sv|../rtl/core.sv|../rtl/branch.sv|../rtl/alu.sv|../rtl/defines/packages.sv|
 R11
 !i113 0
 R12
@@ -70,24 +78,24 @@ R13
 R1
 vbaud_rate_reg
 R2
-Z14 !s110 1744642206
-!i10b 1
-!s100 [YH>G_Z9j8W9jVKZdK:Mc2
-IT4]hlmM^1<@GNeJ?hnFGX1
 R4
-!s105 buad_rate_reg_sv_unit
+!i10b 1
+!s100 fRE9FK3T`0EI2LM<Sdj1V3
+I0K9d[Tdlm@3WCVXL<6b<43
 S1
 R0
-w1743062753
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/buad_rate_reg.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/buad_rate_reg.sv
-L0 1
-R8
+R6
+8../../uart/rtl/buad_rate_reg.sv
+F../../uart/rtl/buad_rate_reg.sv
+!i122 2
+L0 1 65
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -95,24 +103,24 @@ R13
 R1
 vbit_count_reg
 R2
-R14
-!i10b 1
-!s100 jAVEPM]UVGW9hY;H^D@UY2
-I;0FcSMSbVcmG^[JXQ1PHe1
 R4
-!s105 bit_count_reg_sv_unit
+!i10b 1
+!s100 7eGfM>:FhR_:KmlJ]7?SF3
+IWFXW3j2<3L93TjBDgeX821
 S1
 R0
-w1743062425
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/bit_count_reg.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/bit_count_reg.sv
-L0 1
-R8
+R6
+8../../uart/rtl/bit_count_reg.sv
+F../../uart/rtl/bit_count_reg.sv
+!i122 2
+L0 1 55
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -120,25 +128,28 @@ R13
 R1
 vbranch
 R2
+R2
 R3
-DXx4 work 14 branch_sv_unit 0 22 >lH4l<;3`M6JNcE896C8G2
+DXx4 work 14 branch_sv_unit 0 22 T63ZG]RG_hHFOAI:?mKZd3
 R4
+R5
 r1
 !s85 0
 !i10b 1
-!s100 fAM0mAa47h_C[`e2JfdPA3
-IoD>mcdEm6n8:8]o4EzzSH1
+!s100 M@KhPD:k0m><f>Dl8bIl61
+I<e<NJdU7dAM8B0SIUVmJo3
 !s105 branch_sv_unit
 S1
 R0
-R5
-Z15 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/branch.sv
-Z16 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/branch.sv
-L0 2
-R8
-31
+R6
+Z16 8../rtl/branch.sv
+Z17 F../rtl/branch.sv
+!i122 2
+L0 2 19
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -146,24 +157,27 @@ R13
 R1
 Xbranch_sv_unit
 R2
+R2
 R3
-V>lH4l<;3`M6JNcE896C8G2
+R4
+VT63ZG]RG_hHFOAI:?mKZd3
 r1
 !s85 0
 !i10b 1
-!s100 kJXY>XHTZSmaN<HP_0OW;0
-I>lH4l<;3`M6JNcE896C8G2
+!s100 QZho?>2EJ[<iWPjZbMFXC0
+IT63ZG]RG_hHFOAI:?mKZd3
 !i103 1
 S1
 R0
-R5
-R15
+R6
 R16
-L0 1
-R8
-31
+R17
+!i122 2
+R14
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -171,24 +185,24 @@ R13
 R1
 vcore
 R2
-Z17 !s110 1744642207
-!i10b 1
-!s100 Y[5G4GFlFCMMgW00XIjP_1
-Iig>hBYW1<VVK_ic=?gLmP3
 R4
-!s105 core_sv_unit
+!i10b 1
+!s100 AZLj3Ie4NN>lYLRUZc^m23
+IBFM]45]nC`[n]U0igaW<71
 S1
 R0
-w1743083468
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/core.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/core.sv
-L0 1
-R8
+w1789284348
+8../rtl/core.sv
+F../rtl/core.sv
+!i122 2
+L0 1 69
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -196,24 +210,24 @@ R13
 R1
 vcore_tb
 R2
-R17
-!i10b 1
-!s100 HK4_V`g@FDl@EcFU;e[Ul1
-ID4JUD?LmCMDzd;]37UFX50
 R4
-!s105 core_tb_sv_unit
+!i10b 1
+!s100 KGEG[V4`HnW[i0a@fAQJd0
+I05AL@c[6zON6ND7k4_;`^3
 S1
 R0
-w1743142288
-8/home/aziz/Documents/Computer_Architecture_Lab/core/testbench/core_tb.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/testbench/core_tb.sv
-L0 1
-R8
+w1789284532
+8core_tb.sv
+Fcore_tb.sv
+!i122 2
+L0 1 33
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -221,25 +235,28 @@ R13
 R1
 vdata_memory
 R2
+R2
 R3
-DXx4 work 19 data_memory_sv_unit 0 22 fczHdGX7NaPfOSF??jWe:2
+DXx4 work 19 data_memory_sv_unit 0 22 7`_6Vbbznki7Bm=1]G6aH3
 R4
+R5
 r1
 !s85 0
 !i10b 1
-!s100 aNE98znZkV[BX2AILFe9>1
-I_NzQ^T`]FGSTEHW13kNG]2
+!s100 7l>mh5ojfRBJK_D;CN0>N3
+I[2H@ha=3NK4Q7m3RaA0:?0
 !s105 data_memory_sv_unit
 S1
 R0
-Z18 w1744063692
-Z19 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/data_memory.sv
-Z20 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/data_memory.sv
-L0 2
-R8
-31
+Z18 w1789283335
+Z19 8../rtl/data_memory.sv
+Z20 F../rtl/data_memory.sv
+!i122 2
+L0 2 34
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -247,24 +264,27 @@ R13
 R1
 Xdata_memory_sv_unit
 R2
+R2
 R3
-VfczHdGX7NaPfOSF??jWe:2
+R4
+V7`_6Vbbznki7Bm=1]G6aH3
 r1
 !s85 0
 !i10b 1
-!s100 NM_fTF6]K;HGBk_1WGPdO0
-IfczHdGX7NaPfOSF??jWe:2
+!s100 1Cz5io:inUBz30jS`oPH81
+I7`_6Vbbznki7Bm=1]G6aH3
 !i103 1
 S1
 R0
 R18
 R19
 R20
-L0 1
-R8
-31
+!i122 2
+R14
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -272,25 +292,28 @@ R13
 R1
 vdecoder
 R2
+R2
 R3
-DXx4 work 15 decoder_sv_unit 0 22 L@SZl>20RMkEzLLocAjn:1
+DXx4 work 15 decoder_sv_unit 0 22 Mjo5fblR7PWjO:^hA<j^U1
 R4
+R5
 r1
 !s85 0
 !i10b 1
-!s100 ^?eZaKkflFb?gPOGRn8oK2
-IVSRHb4cO3Z;7zMmS7WcQ42
+!s100 F`TK[GO99jciBHYEcne[H1
+IRFVREAlLoLG10jk_zaU[M1
 !s105 decoder_sv_unit
 S1
 R0
-R5
-Z21 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/decoder.sv
-Z22 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/decoder.sv
-L0 2
-R8
-31
+R6
+Z21 8../rtl/decoder.sv
+Z22 F../rtl/decoder.sv
+!i122 2
+L0 2 103
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -298,24 +321,52 @@ R13
 R1
 Xdecoder_sv_unit
 R2
+R2
 R3
-VL@SZl>20RMkEzLLocAjn:1
+R4
+VMjo5fblR7PWjO:^hA<j^U1
 r1
 !s85 0
 !i10b 1
-!s100 mWi1ZX3QDl`?_hTA609B>3
-IL@SZl>20RMkEzLLocAjn:1
+!s100 BZMY5S630jVnLDl15A?ic3
+IMjo5fblR7PWjO:^hA<j^U1
 !i103 1
 S1
 R0
-R5
+R6
 R21
 R22
-L0 1
-R8
-31
+!i122 2
+R14
 R9
+31
 R10
+R15
+R11
+!i113 0
+R12
+R13
+R1
+vfifo
+R2
+R4
+!i10b 1
+!s100 Zkk^2NkR5=?M?E_B4aceQ3
+Io[UMACkk>DQ<8Pk@WGJ6k3
+S1
+R0
+w1781081727
+8../../uart/rtl/fifo.sv
+F../../uart/rtl/fifo.sv
+!i122 2
+L0 1 60
+R5
+R9
+r1
+!s85 0
+31
+R10
+R15
 R11
 !i113 0
 R12
@@ -323,24 +374,24 @@ R13
 R1
 vinstruction_memory
 R2
-R14
-!i10b 1
-!s100 3a4Fl]Za?I50V1EU6jP3L0
-I[Y?oY8h@m8:Ol7DZ`XbAU2
 R4
-!s105 instruction_memory_sv_unit
+!i10b 1
+!s100 A9:`Fe0i0[1RRDHbn6@g91
+IMb`mKIUl2meR`iAck:zZa2
 S1
 R0
-w1744107593
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/instruction_memory.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/instruction_memory.sv
-L0 1
-R8
+w1789277803
+8../rtl/instruction_memory.sv
+F../rtl/instruction_memory.sv
+!i122 2
+Z23 L0 1 15
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -348,25 +399,28 @@ R13
 R1
 vlsu
 R2
+R2
 R3
-DXx4 work 11 lsu_sv_unit 0 22 l;2VgUFFnX3iK]4mFLgaM1
+DXx4 work 11 lsu_sv_unit 0 22 nWZFG;IZ]=65>>dl;;8][3
 R4
+R5
 r1
 !s85 0
 !i10b 1
-!s100 aEk7N3^8PVa4na^b2`JMF3
-I6;Ug`G7>CR`Ae5VGTPDz82
+!s100 oARCz1l^5Fi_ei1[g`2FW0
+I7GgGNhT7>]?7=K7oi=Pj83
 !s105 lsu_sv_unit
 S1
 R0
-Z23 w1744067634
-Z24 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/lsu.sv
-Z25 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/lsu.sv
-L0 2
-R8
-31
+R6
+Z24 8../rtl/lsu.sv
+Z25 F../rtl/lsu.sv
+!i122 2
+L0 2 20
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -374,24 +428,27 @@ R13
 R1
 Xlsu_sv_unit
 R2
+R2
 R3
-Vl;2VgUFFnX3iK]4mFLgaM1
+R4
+VnWZFG;IZ]=65>>dl;;8][3
 r1
 !s85 0
 !i10b 1
-!s100 cAV92TdlEC4ZeZ=HR]aY]3
-Il;2VgUFFnX3iK]4mFLgaM1
+!s100 8MSU:kJVXM1TI][V33PH@0
+InWZFG;IZ]=65>>dl;;8][3
 !i103 1
 S1
 R0
-R23
+R6
 R24
 R25
-L0 1
-R8
-31
+!i122 2
+R14
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -399,24 +456,24 @@ R13
 R1
 vmux2_1
 R2
-R14
-!i10b 1
-!s100 hKUSzRZIz?g=C8;SXN^8Q2
-IP8deBLcUC_n7?CN_[OYX13
 R4
-!s105 mux2_1_sv_unit
+!i10b 1
+!s100 UQ:1M8DAJ5Nb^nB;FfTHo0
+INACkmSU5`Dd0YY6OgQR]n2
 S1
 R0
+R6
+8../rtl/mux2_1.sv
+F../rtl/mux2_1.sv
+!i122 2
+L0 1 7
 R5
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux2_1.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux2_1.sv
-L0 1
-R8
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -424,24 +481,24 @@ R13
 R1
 vmux3_1
 R2
-R14
-!i10b 1
-!s100 8Sn>cBU_X=2E2m`]i>Zhz0
-Igoa`c3mE6SaGn@>?35Bi10
 R4
-!s105 mux3_1_sv_unit
+!i10b 1
+!s100 ClJnleBzAhCDiMMPO=4PN1
+I201CeFjlCca1@o1L_dA530
 S1
 R0
+R6
+8../rtl/mux3_1.sv
+F../rtl/mux3_1.sv
+!i122 2
+L0 1 14
 R5
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux3_1.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux3_1.sv
-L0 1
-R8
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -449,23 +506,24 @@ R13
 R1
 Xpackages
 R2
-R14
+R4
 !i10b 1
-!s100 ^3lKZRi^QD7O=AiUnc^h01
-IOMgbXZnJ>BfmFKAc;EcMT2
-VOMgbXZnJ>BfmFKAc;EcMT2
+!s100 OXHnK1f=7@cbP?mzh7cLX2
+I9h^igl^7CEQEF_KB0bECz2
 S1
 R0
-w1744067735
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/defines/packages.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/defines/packages.sv
-L0 1
-R8
+w1789278467
+8../rtl/defines/packages.sv
+F../rtl/defines/packages.sv
+!i122 2
+R14
+V9h^igl^7CEQEF_KB0bECz2
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -473,24 +531,24 @@ R13
 R1
 vparity_calculate
 R2
-R14
-!i10b 1
-!s100 4JDmWk@8M51d<89Wej7L51
-Iai[5@`3eL>;iIHTI^Ea=<2
 R4
-!s105 parity_calculate_sv_unit
+!i10b 1
+!s100 O;e=RjLJd2EP;Eh9[1Fke1
+I21z]B9CB?:NMXBYlCCQkC3
 S1
 R0
-w1743046112
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/parity_calculate.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/parity_calculate.sv
-L0 1
-R8
+R6
+8../../uart/rtl/parity_calculate.sv
+F../../uart/rtl/parity_calculate.sv
+!i122 2
+L0 1 11
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -498,24 +556,24 @@ R13
 R1
 vpc
 R2
-R14
-!i10b 1
-!s100 NElSBc[zJbb]Ze2z@enQ^1
-I_DkX=f^hnLo>mN:0_m1Xh3
 R4
-!s105 pc_sv_unit
+!i10b 1
+!s100 i?7>1bKWOm9J3zb[>3=@a2
+I1OYnncJoiWGA^[b55d6DF3
 S1
 R0
+R6
+8../rtl/pc.sv
+F../rtl/pc.sv
+!i122 2
+R23
 R5
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc.sv
-L0 1
-R8
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -523,24 +581,24 @@ R13
 R1
 vpc_add
 R2
-R14
-!i10b 1
-!s100 MI:?A5HPjo@0==B>lhOT_2
-IJV6ZemYccQVOHOgQd[=^a0
 R4
-!s105 pc_add_sv_unit
+!i10b 1
+!s100 aG:GI2RjX4QiWYC0<;J0L1
+IH:0QXedl=ho96oWQ>Mol?1
 S1
 R0
+R6
+8../rtl/pc_add.sv
+F../rtl/pc_add.sv
+!i122 2
+L0 1 9
 R5
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc_add.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc_add.sv
-L0 1
-R8
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -548,24 +606,24 @@ R13
 R1
 vpipline_execute_to_memory
 R2
-R14
-!i10b 1
-!s100 VMOSmKd89WFlQEW1WZO?S3
-Ie`IMJb2eeIQNNWkOgPe<X1
 R4
-Z26 !s105 pipline_reg_sv_unit
+!i10b 1
+!s100 UJz[8]^z_`MenE7iSm;[B3
+ITJHd4iaC@=`JiQGNi>CzQ2
 S1
 R0
+Z26 w1789283300
+Z27 8../rtl/pipline_reg.sv
+Z28 F../rtl/pipline_reg.sv
+!i122 2
+L0 20 33
 R5
-Z27 8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pipline_reg.sv
-Z28 F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pipline_reg.sv
-L0 20
-R8
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -573,24 +631,24 @@ R13
 R1
 vpipline_fetch_to_decode
 R2
-R14
-!i10b 1
-!s100 U`=`m?;>:VmH=M`D0IUXN3
-IMHLNhCa8?@b18XH[2=aD03
 R4
-R26
+!i10b 1
+!s100 jQRNldQLKJ78DiRLDJhE93
+IN;PEWZ7S69ACIKHnZfII52
 S1
 R0
-R5
+R26
 R27
 R28
-L0 2
-R8
+!i122 2
+L0 2 16
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -598,49 +656,24 @@ R13
 R1
 vregisterfile
 R2
-R14
-!i10b 1
-!s100 kL=U:P8Ic_QQ15^oZ?NWj0
-INm?TMeVTSIR7QZ<O1]ZCB2
 R4
-!s105 registerfile_sv_unit
+!i10b 1
+!s100 ]DIog:P@c@>n?o`eWO1`03
+IB4mHl5XD0G;<:`E3E26ee3
 S1
 R0
-w1744063645
-8/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/registerfile.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/core/rtl/registerfile.sv
-L0 1
-R8
+w1789287107
+8../rtl/registerfile.sv
+F../rtl/registerfile.sv
+!i122 2
+L0 1 62
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
-R11
-!i113 0
-R12
-R13
-R1
-vrx_fifo
-R2
-R14
-!i10b 1
-!s100 ocSA=H:i^F=E=96dj8B`Q3
-IBW4l2e1oKe9kKzL1e]>B_3
-R4
-!s105 rx_fifo_sv_unit
-S1
-R0
-Z29 w1743038571
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_fifo.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_fifo.sv
-L0 1
-R8
-r1
-!s85 0
-31
-R9
-R10
+R15
 R11
 !i113 0
 R12
@@ -648,49 +681,24 @@ R13
 R1
 vrx_shift_reg
 R2
-R14
-!i10b 1
-!s100 ]J>kJ0STVVaY6@^JlaR]O2
-ImPPlWZK;3TNY88Ced9ez90
 R4
-!s105 rx_shift_reg_sv_unit
+!i10b 1
+!s100 hXhURnSn?YbDLl7;ceOT:1
+I51ggoT9dbzY]H6PT476i]1
 S1
 R0
-w1743062480
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_shift_reg.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_shift_reg.sv
-L0 1
-R8
+w1781081899
+8../../uart/rtl/rx_shift_reg.sv
+F../../uart/rtl/rx_shift_reg.sv
+!i122 2
+L0 1 23
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
-R11
-!i113 0
-R12
-R13
-R1
-vtx_fifo
-R2
-R14
-!i10b 1
-!s100 mVJKR1PMI4B;T@RTVa7`E2
-IRfA1a=Ng1:W1l7_`?NCnA1
-R4
-!s105 tx_fifo_sv_unit
-S1
-R0
-R29
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_fifo.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_fifo.sv
-L0 1
-R8
-r1
-!s85 0
-31
-R9
-R10
+R15
 R11
 !i113 0
 R12
@@ -698,24 +706,24 @@ R13
 R1
 vtx_shift_reg
 R2
-R14
-!i10b 1
-!s100 N9k9944@_HiJ=?@=DkPPJ3
-ICWFP4Vl`i_8;iLcbYR08k1
 R4
-!s105 tx_shift_reg_sv_unit
+!i10b 1
+!s100 1EKF]o=4AbK3e`ACOzZJZ3
+I@hWAU1MngiaCnf=U^78PO1
 S1
 R0
-w1743042089
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_shift_reg.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_shift_reg.sv
-L0 1
-R8
+R6
+8../../uart/rtl/tx_shift_reg.sv
+F../../uart/rtl/tx_shift_reg.sv
+!i122 2
+L0 1 28
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -723,24 +731,24 @@ R13
 R1
 vuart
 R2
-R14
-!i10b 1
-!s100 4Q[@KDj6LS3mOl[6g[Z8^3
-IXn9]^=X6m]gLfjYhGPYoX3
 R4
-!s105 uart_sv_unit
+!i10b 1
+!s100 ^a6b2BIV_kEA812V`N2Bi0
+IEi5co>bdHh0ood4=j9jdX1
 S1
 R0
-w1743062833
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart.sv
-L0 1
-R8
+w1789283036
+8../../uart/rtl/uart.sv
+F../../uart/rtl/uart.sv
+!i122 2
+L0 1 67
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -748,24 +756,24 @@ R13
 R1
 vuart_controller
 R2
-R14
-!i10b 1
-!s100 oiHFgIffcfXzWz_@BOK^P3
-I6@Lh?DkSX`@RGJQMW5zY?2
 R4
-!s105 uart_controller_sv_unit
+!i10b 1
+!s100 mNL1K=<iKhmC<YM2HId]e2
+I>^@_a8U7RfeU9JEnQl]n72
 S1
 R0
-w1744116931
-8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_controller.sv
-F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_controller.sv
-L0 1
-R8
+R6
+8../../uart/rtl/uart_controller.sv
+F../../uart/rtl/uart_controller.sv
+!i122 2
+L0 1 278
+R5
+R9
 r1
 !s85 0
 31
-R9
 R10
+R15
 R11
 !i113 0
 R12
@@ -773,25 +781,28 @@ R13
 R1
 vuart_registerfile
 R2
+R2
 R3
-DXx4 work 25 uart_registerfile_sv_unit 0 22 Nh8W8IGo50oRI@m:JRB741
+DXx4 work 25 uart_registerfile_sv_unit 0 22 0;1H;K4nL0o46>idl8<nh2
 R4
+R5
 r1
 !s85 0
 !i10b 1
-!s100 J?E_M`;>jRoR_>zeOzL=81
-IjQ2EVmVJUzL8>0^O3FmK63
+!s100 f]=e`2d<c6UIBOZICknk>0
+IE2TY`WE3eji@eLa7OFn>J3
 !s105 uart_registerfile_sv_unit
 S1
 R0
-Z30 w1744117306
-Z31 8/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_registerfile.sv
-Z32 F/home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_registerfile.sv
-L0 2
-R8
-31
+Z29 w1781080581
+Z30 8../../uart/rtl/uart_registerfile.sv
+Z31 F../../uart/rtl/uart_registerfile.sv
+!i122 2
+L0 2 112
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12
@@ -799,24 +810,27 @@ R13
 R1
 Xuart_registerfile_sv_unit
 R2
+R2
 R3
-VNh8W8IGo50oRI@m:JRB741
+R4
+V0;1H;K4nL0o46>idl8<nh2
 r1
 !s85 0
 !i10b 1
-!s100 hf=GKiaj3fCFEPCdJ4M;b3
-INh8W8IGo50oRI@m:JRB741
+!s100 NbYkbOMGz8aTgmT`nV3Y_3
+I0;1H;K4nL0o46>idl8<nh2
 !i103 1
 S1
 R0
+R29
 R30
 R31
-R32
-L0 1
-R8
-31
+!i122 2
+R14
 R9
+31
 R10
+R15
 R11
 !i113 0
 R12

@@ -7,7 +7,7 @@ module core_tb;
     logic rx_bit;
 
     // Instantiate the processor
-    core uut (
+    core dut (
         .*
     );
 
@@ -24,14 +24,10 @@ module core_tb;
 
         #300000;  // Run simulation for 100ns
         $finish; // End simulation
+        $stop;
     end
 always_comb begin 
     rx_bit=tx_bit;
 end
-    // Dump waveforms
-    initial begin
-        $dumpfile("waveform.vcd");
-        $dumpvars(0, core_tb);
-    end
 
 endmodule

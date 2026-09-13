@@ -87,7 +87,7 @@ stall=1'b0;
     endcase      
 end 
 always_comb begin
-    forward_sel_2=1'b0;
+    forward_sel_1=1'b0;
     forward_sel_2=1'b0;
     waddr_mem=instruction_mem[11:7];
     raddr1_decode=instruction[19:15];

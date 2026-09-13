@@ -1,33 +1,12 @@
 # Verilog source files
 SRC_FILES = \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/defines/packages.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/alu.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/branch.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/data_memory.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/decoder.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/instruction_memory.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux2_1.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/mux3_1.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pc_add.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/pipline_reg.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/registerfile.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/lsu.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/bit_count_reg.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/buad_rate_reg.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/parity_calculate.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_fifo.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/rx_shift_reg.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_fifo.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/tx_shift_reg.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_controller.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/uart/rtl/uart_registerfile.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/rtl/core.sv \
-    /home/aziz/Documents/Computer_Architecture_Lab/core/testbench/core_tb.sv
+	../rtl/defines/packages.sv \
+	../rtl/*.sv \
+	../../uart/rtl/*.sv\
+    *.sv
 
 # Include directory (relative to where make is run)
-INCLUDE_DIR = ./core/rtl/defines
+INCLUDE_DIR = ../rtl/defines
 
 # ModelSim commands
 VLIB = vlib
@@ -38,7 +17,9 @@ VSIM = vsim
 WORK_LIB = work
 
 # Default target
-all: clean compile simulate
+all: clean compile sim
+
+.PHONY: all compile sim sim-gui clean
 
 compile:
 	@echo "Creating work library..."
@@ -46,9 +27,14 @@ compile:
 	@echo "Compiling Verilog files..."
 	$(VLOG) -sv +incdir+$(INCLUDE_DIR) $(SRC_FILES)
 
-simulate:
-	@echo "Running simulation..."
+sim: compile
+	@echo "Running simulation without GUI..."
 	$(VSIM) -c -do "run -all; quit" core_tb
+
+sim-gui: compile
+	@echo "Running simulation with GUI..."
+	$(VSIM) -gui -voptargs="+acc" core_tb -do "wave.do";
+
 
 clean:
 	rm -rf $(WORK_LIB) transcript *.vcd *.wlf

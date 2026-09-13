@@ -1,9 +1,339 @@
-# 
-# ** License Issue: License server does not support this feature (msimviewer)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** License Issue: Invalid (inconsistent) license key. (/home/aziz/mgc/install.aol/LICENSE.TXT)
-# ** Error: Failure to license for viewer. Unable to checkout 'msimviewer' license feature.
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -gui -voptargs="+acc" core_tb -do "wave.do" 
+# Start time: 14:31:34 on Sep 13,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.core_tb(fast)
+# Loading work.core(fast)
+# Loading work.pc(fast)
+# Loading work.pc_add(fast)
+# Loading work.mux2_1(fast)
+# Loading work.instruction_memory(fast)
+# Loading work.pipline_fetch_to_decode(fast)
+# Loading work.registerfile(fast)
+# Loading work.packages(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_sv_unit(fast)
+# Loading work.branch(fast)
+# Loading work.pipline_execute_to_memory(fast)
+# Loading work.lsu_sv_unit(fast)
+# Loading work.lsu(fast)
+# Loading work.uart(fast)
+# Loading work.bit_count_reg(fast)
+# Loading work.baud_rate_reg(fast)
+# Loading work.parity_calculate(fast)
+# Loading work.fifo(fast)
+# Loading work.rx_shift_reg(fast)
+# Loading work.tx_shift_reg(fast)
+# Loading work.uart_controller(fast)
+# Loading work.uart_registerfile_sv_unit(fast)
+# Loading work.uart_registerfile(fast)
+# Loading work.data_memory_sv_unit(fast)
+# Loading work.data_memory(fast)
+# Loading work.mux3_1(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'addr_mem'. The port definition is at: ../rtl/data_memory.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /core_tb/dut/Data_memory File: ../rtl/core.sv Line: 62
+# do wave.do
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Writing baud rate data 0x67
+# UART: Reading baud rate register 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Writing baud rate data 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# ** Note: $finish    : core_tb.sv(26)
+#    Time: 300010 ns  Iteration: 0  Instance: /core_tb
+# 1
+# Break in Module core_tb at core_tb.sv line 26
+add wave -position insertpoint sim:/core_tb/dut/_decoder/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.core_tb(fast)
+# Loading work.core(fast)
+# Loading work.pc(fast)
+# Loading work.pc_add(fast)
+# Loading work.mux2_1(fast)
+# Loading work.instruction_memory(fast)
+# Loading work.pipline_fetch_to_decode(fast)
+# Loading work.registerfile(fast)
+# Loading work.packages(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_sv_unit(fast)
+# Loading work.branch(fast)
+# Loading work.pipline_execute_to_memory(fast)
+# Loading work.lsu_sv_unit(fast)
+# Loading work.lsu(fast)
+# Loading work.uart(fast)
+# Loading work.bit_count_reg(fast)
+# Loading work.baud_rate_reg(fast)
+# Loading work.parity_calculate(fast)
+# Loading work.fifo(fast)
+# Loading work.rx_shift_reg(fast)
+# Loading work.tx_shift_reg(fast)
+# Loading work.uart_controller(fast)
+# Loading work.uart_registerfile_sv_unit(fast)
+# Loading work.uart_registerfile(fast)
+# Loading work.data_memory_sv_unit(fast)
+# Loading work.data_memory(fast)
+# Loading work.mux3_1(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'addr_mem'. The port definition is at: ../rtl/data_memory.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /core_tb/dut/Data_memory File: ../rtl/core.sv Line: 62
+run -all
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Writing baud rate data 0x67
+# UART: Reading baud rate register 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Writing baud rate data 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# ** Note: $finish    : core_tb.sv(26)
+#    Time: 300010 ns  Iteration: 0  Instance: /core_tb
+# 1
+# Break in Module core_tb at core_tb.sv line 26
+add wave -position insertpoint sim:/core_tb/dut/forward_radda1/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.core_tb(fast)
+# Loading work.core(fast)
+# Loading work.pc(fast)
+# Loading work.pc_add(fast)
+# Loading work.mux2_1(fast)
+# Loading work.instruction_memory(fast)
+# Loading work.pipline_fetch_to_decode(fast)
+# Loading work.registerfile(fast)
+# Loading work.packages(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_sv_unit(fast)
+# Loading work.branch(fast)
+# Loading work.pipline_execute_to_memory(fast)
+# Loading work.lsu_sv_unit(fast)
+# Loading work.lsu(fast)
+# Loading work.uart(fast)
+# Loading work.bit_count_reg(fast)
+# Loading work.baud_rate_reg(fast)
+# Loading work.parity_calculate(fast)
+# Loading work.fifo(fast)
+# Loading work.rx_shift_reg(fast)
+# Loading work.tx_shift_reg(fast)
+# Loading work.uart_controller(fast)
+# Loading work.uart_registerfile_sv_unit(fast)
+# Loading work.uart_registerfile(fast)
+# Loading work.data_memory_sv_unit(fast)
+# Loading work.data_memory(fast)
+# Loading work.mux3_1(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'addr_mem'. The port definition is at: ../rtl/data_memory.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /core_tb/dut/Data_memory File: ../rtl/core.sv Line: 62
+run -all
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Writing baud rate data 0x67
+# UART: Reading baud rate register 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Writing baud rate data 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# ** Note: $finish    : core_tb.sv(26)
+#    Time: 300010 ns  Iteration: 0  Instance: /core_tb
+# 1
+# Break in Module core_tb at core_tb.sv line 26
+add wave -position insertpoint sim:/core_tb/dut/_registerfile/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.core_tb(fast)
+# Loading work.core(fast)
+# Loading work.pc(fast)
+# Loading work.pc_add(fast)
+# Loading work.mux2_1(fast)
+# Loading work.instruction_memory(fast)
+# Loading work.pipline_fetch_to_decode(fast)
+# Loading work.registerfile(fast)
+# Loading work.packages(fast)
+# Loading work.decoder_sv_unit(fast)
+# Loading work.decoder(fast)
+# Loading work.alu_sv_unit(fast)
+# Loading work.alu(fast)
+# Loading work.branch_sv_unit(fast)
+# Loading work.branch(fast)
+# Loading work.pipline_execute_to_memory(fast)
+# Loading work.lsu_sv_unit(fast)
+# Loading work.lsu(fast)
+# Loading work.uart(fast)
+# Loading work.bit_count_reg(fast)
+# Loading work.baud_rate_reg(fast)
+# Loading work.parity_calculate(fast)
+# Loading work.fifo(fast)
+# Loading work.rx_shift_reg(fast)
+# Loading work.tx_shift_reg(fast)
+# Loading work.uart_controller(fast)
+# Loading work.uart_registerfile_sv_unit(fast)
+# Loading work.uart_registerfile(fast)
+# Loading work.data_memory_sv_unit(fast)
+# Loading work.data_memory(fast)
+# Loading work.mux3_1(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'addr_mem'. The port definition is at: ../rtl/data_memory.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /core_tb/dut/Data_memory File: ../rtl/core.sv Line: 62
+run -all
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x0
+# UART: Writing baud rate data 0x67
+# UART: Reading baud rate register 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading status register 0x0
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Writing baud rate data 0x67
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading control register 0x0
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# UART: Reading data register 0xx
+# UART: Reading status register 0x0
+# UART: Reading baud rate register 0x67
+# ** Note: $finish    : core_tb.sv(26)
+#    Time: 300010 ns  Iteration: 0  Instance: /core_tb
+# 1
+# Break in Module core_tb at core_tb.sv line 26

@@ -13,8 +13,8 @@ int uart_receive(void);
 int main(void){
     int i=0;
     uart_init();
-    uart_transmit(54);
-    i=uart_receive();
+ //   uart_transmit(54);
+ //   i=uart_receive();
 }
 
 void uart_init(void){

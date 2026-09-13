@@ -16,7 +16,7 @@ pc_add pc_4_add(.pc,.pc_next);
 // PC or ALU slector mux
 mux2_1 PC_ALU_sel(.sel(br_taken),.input0(pc_next),.input1(result),.out(pc_in));
 //instruction memory
-instruction_memory _instruction_memory(.addr(pc),.inst);
+instruction_memory _instruction_memory(.addr(pc),.inst,.clock);
 //pipeline register
 pipline_fetch_to_decode fetch_to_decode_reg(.clock,.reset,.pc_fetch(pc),.instruction_fetch(inst),.stall,.br_taken,
 .pc_execute,.instruction_execute(instruction));

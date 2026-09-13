@@ -1,40 +1,35 @@
 import packages::*;
-module data_memory (
-    input logic [31:0]wdata_mem,addr_mem,
-    input logic [2:0]rd_wr_mem,
+module data_memory #(SIZE=512) (
+    input logic [3:0] [7:0] wdata_mem,
+    input logic [9:0] addr_mem,
+    input logic [2:0] rd_wr_mem,
     input logic mem_wr,clock,reset,
-    output logic [31:0]rdata_mem
+    output logic [3:0] [7:0] rdata_mem
 );
-logic [7:0]memory[100:0];
-    always_ff @( negedge clock ) begin 
-        if (reset) begin
-            $readmemh("/home/aziz/Documents/Computer_Architecture_Lab/core/testbench/data_memory.txt",memory);
-        end
-        else if (mem_wr && addr_mem > 32'b0)begin
-            case (rd_wr_mem)
-                LB_SB:memory[addr_mem]   <= wdata_mem[7:0];
-                LH_SH:begin
-                    memory[addr_mem]     <= wdata_mem[7:0];
-                    memory[addr_mem + 1] <= wdata_mem[15:8];
-                end
-                LW_SW:begin
-                    memory[addr_mem]     <= wdata_mem[7:0];
-                    memory[addr_mem + 1] <= wdata_mem[15:8];
-                    memory[addr_mem + 2] <= wdata_mem[23:16];
-                    memory[addr_mem + 3] <= wdata_mem[31:24];
-                end
-                default: memory[addr_mem]<= wdata_mem[7:0];
-            endcase
-        end
+logic [3:0] [7:0] memory[SIZE-1:0];
+logic [3:0] [7:0] word;
+always_comb begin 
+    if (mem_wr) begin
+        case (rd_wr_mem)
+            BYTE               : word = {rdata_mem[3:1], wdata_mem[0]};
+            HALF_WORD          : word = {rdata_mem[3:2], wdata_mem[1:0]};
+            WORD               : word =  wdata_mem;
+            default            : word =  wdata_mem;    
+        endcase
+    end
+    
+end
+    always_ff @( clock ) begin 
+            memory[addr_mem] <= word;
     end
     always_comb begin 
         case (rd_wr_mem)
-            LB_SB  : rdata_mem = {{24{memory[addr_mem][7]}}, memory[addr_mem]};
-            LBU    : rdata_mem = {24'b0,memory[addr_mem]};
-            LH_SH  : rdata_mem = {{16{memory[addr_mem+1][7]}}, memory[addr_mem+1], memory[addr_mem]};
-            LHU    : rdata_mem = {16'b0,memory[addr_mem+1],memory[addr_mem]};
-            LW_SW  : rdata_mem = {memory[addr_mem+3],memory[addr_mem +2],memory[addr_mem+1],memory[addr_mem]};
-            default: rdata_mem = {{24{memory[addr_mem][7]}}, memory[addr_mem]};
+            BYTE               : rdata_mem = {{24{memory[addr_mem][0][7]}}, memory[addr_mem][0]};
+            HALF_WORD          : rdata_mem = {{16{memory[addr_mem][1][7]}},memory[addr_mem][1:0]};
+            WORD               : rdata_mem =  memory[addr_mem][3:0];
+            UNSIGNED_BYTE      : rdata_mem = {24'b0,memory[addr_mem][0]};
+            UNSIGNED_HALF_WORD : rdata_mem = {16'b0,memory[addr_mem][1],memory[addr_mem][1:0]};
+            default            : rdata_mem = memory[addr_mem][3:0];
         endcase
     end
 endmodule
